@@ -1,0 +1,41 @@
+<LayoutModificationTemplate 
+  xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" 
+  xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" 
+  xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" 
+  xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+  Version="1" >
+
+  <LayoutOptions 
+    StartTileGroupCellWidth="6"
+    StartTileGroupsColumnCount="2" 
+    />
+
+  <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
+  
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6">
+
+        <start:Group Name="CoreImage">
+          <!--Row 0-->
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Microsoft Office\Office16\WINWORD.EXE" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Microsoft Office\Office16\EXCEL.EXE" />
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Microsoft Office\Office16\POWERPNT.EXE" />
+          <!--Row 2-->
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.16" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Microsoft Office\Office16\lync.exe" />
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Microsoft Office\Office16\ONENOTE.EXE" />
+          <!--Row 4-->
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="4" DesktopApplicationID="MSEdge" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="4" DesktopApplicationID="Chrome" />
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="4" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk" />
+          <!--Row 6-->
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="6" DesktopApplicationID="Microsoft.SoftwareCenter.DesktopToasts" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="6" DesktopApplicationID="Microsoft.Windows.Explorer" />
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="6" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Logoff.lnk" />
+        </start:Group>        
+
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+
+</LayoutModificationTemplate>
